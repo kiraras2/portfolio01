@@ -6,3 +6,68 @@
 @media screen and (min-width: 769px) {
   /* PC style */
 }
+
+
+  .l-header__hamburger {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 30px;
+  }
+  .l-header__hamburger > span {
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 2px;
+    background-color: #C0C0C0;
+  }
+  .l-header__hamburger > span:nth-child(1) {
+    top: 0;
+  }
+  .l-header__hamburger > span:nth-child(2) {
+    top: 10px;
+  }
+  .l-header__hamburger > span:nth-child(3) {
+    top: 20px;
+  }
+  .c-nav__menu {
+    
+  }
+  .c-nav__menu li {
+  list-style-type: circle;
+	margin-left: 24px;/* リストの左側に余白 */
+	text-align: left;
+  }
+.txtMoving{
+  align-items: center;
+  color: #fff;
+  display: flex;
+  height: 40px;
+  line-height: 40px;
+  overflow:hidden;
+  width: 100%;
+  white-space:nowrap;
+  margin-top: 100px;
+  z-index: 1;
+}
+.txtMoving ul {
+  animation: flowing 20s linear infinite;
+  font-size: 20px;
+  transform:translateX(100%);
+  margin: 0;
+  padding: 0;
+}
+.txtMoving li{
+  display: inline-block;
+  padding-right: 10px;
+}
+@keyframes flowing {
+  0% { transform:translateX(0); }
+  100% { transform:translateX(-100%); }
+}
+
+/*中央からスタート
+@keyframes flowing {
+0% { transform:translateX(50%); }
+}
+  */
