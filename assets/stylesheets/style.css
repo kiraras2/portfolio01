@@ -3,11 +3,114 @@
 @media screen and (max-width: 768px) {
   /* SP style */
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
   /* PC style */
 }
 
+@media screen and (min-width: 768px) {
+  .pcWrapper {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: url("../../assets/images/adrian-infernus-GLf7bAwCdYg-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 3rem 3.5rem;
+}
+.l-header__pc {
+  position: relative;
+  z-index: 10;
+  width: 22.8rem;
+  display: block;
+  & h1 {
+  font-size: 80px;
+  margin-bottom: 20px;
+  }
+  & p {
+  margin-left: 20px;
+  }
+}
+.c-nav__List {
+  font-size: 30px;
+}
+.c-nav__List li {
+  list-style-type: circle;
+  text-align: left;
+  margin-left: 40px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.pc__img--upRight {
+  position: absolute;
+  top: 0;
+  right: 38.28125vw;
+  width: 27.734375vw;
+  max-width: 39.2rem;
+}
+.pc__img--bottomLeft {
+  position: absolute;
+  height: 30.46875vw;
+  bottom: -1px;
+  left: 0;
+  max-height: 42.9rem;
+  width: 42.03125vw;
+  max-width: 59.4rem;
+}
+.pc__img--posi {
+  position: relative;
+}
+.pc__switchImgRightUp {
+  position: absolute;
+  width: 100%;
+  opacity: 0;
+  -webkit-transition: opacity 0.6s ease-out;
+  transition: opacity 0.6s ease-out;
+}
+.pc__switchImgLeftDown {
+  position: absolute;
+  width: 100%;
+  opacity: 0;
+  -webkit-transition: opacity 0.6s ease-out;
+  transition: opacity 0.6s ease-out;
+}
+.pc__default {
+  opacity: 0;
+}
+}
+.imageNum-1 {
+z-index: 9;
+}
+.imageNum-2 {
+z-index: 8;
+}
+.imageNum-3 {
+z-index: 7;
+}
+.imageNum-4 {
+z-index: 6;
+}
+.imageNum-5 {
+z-index: 5;
+}
+.imageNum-6 {
+z-index: 4;
+}
+.imageNum-7 {
+z-index: 3;
+}
+.imageNum-8 {
+z-index: 2;
+}
+.imageNum-9 {
+z-index: 1;
+opacity: 1;
+}
 
+}
+
+@media screen and (max-width: 768px) {
   .l-header__hamburger {
     position: absolute;
     top: 15px;
@@ -31,13 +134,29 @@
     top: 20px;
   }
   .c-nav__menu {
-    
+    font-size: 40px;
   }
   .c-nav__menu li {
-  list-style-type: circle;
-	margin-left: 24px;/* リストの左側に余白 */
-	text-align: left;
+    list-style-type: circle;
+    margin-left: 40px;
+    text-align: left;
   }
+  .c-nav__buy {
+    display: flex;
+  }
+  .c-nav__buyList {
+    padding: 0.5em 1em;
+    margin: 10px 10px 10px 10px;
+    font-weight: bold;
+    border: solid 3px #000;
+    border-radius: 10px;
+  }
+  .c-nav__sns {
+    display: flex;
+  }
+}
+
+
 .txtMoving{
   align-items: center;
   color: #fff;
