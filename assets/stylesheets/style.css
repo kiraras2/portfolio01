@@ -7,7 +7,7 @@
   /* PC style */
 }
 
-@media screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) {
   .pcWrapper {
   position: fixed;
   top: 0;
@@ -111,6 +111,18 @@ opacity: 1;
 }
 
 @media screen and (max-width: 768px) {
+  .spWrapper {
+    background-color: #fff;
+    overflow: hidden;
+    width: 100%;
+  }
+    .spWrapper {
+      position: absolute;
+      right: 0;
+      z-index: 999;
+      width: 38.28125vw;
+    }
+  }
   .l-header__hamburger {
     position: absolute;
     top: 15px;
