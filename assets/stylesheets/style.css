@@ -475,7 +475,8 @@ body {
     left: 2.34375vw;
     width: 42.96875vw;
     top: -7rem;
-  }
+    font-size: 80px;
+    margin-top: 20px;
 }
 .fv__movie {
   width: 84.2666666667vw;
@@ -1330,7 +1331,7 @@ font-size: 13px;
     bottom: 0;
     left: 0;
     right: 0;
-    background-image: url("../../src/img/bg-pc.jpg");
+    background-image: url("./assets/images/annie-spratt-nWiS2rgtVts-unsplash.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     padding: 3rem 3.5rem;
