@@ -228,7 +228,7 @@ body {
 }
 
 .lastBlock {
-  background: url("../../src/img/bg-last.jpg");
+  background: linear-gradient(177.6278158453deg, rgb(181, 209, 205) -61.748480444%, rgb(181, 209, 205) -40.4360465116%, rgb(239, 212, 206) 85.579082981%, rgb(255, 255, 255) 96.8789640592%);
   background-size: cover;
   padding-top: 36vw;
 }
@@ -425,7 +425,7 @@ body {
   width: 43.4666666667vw;
 }
 .nav__list--shop {
-  width: 51.4666666667vw;
+  width: 53.4666666667vw;
 }
 .nav__list--news {
   width: 31.4666666667vw;
@@ -434,27 +434,20 @@ body {
   display: flex;
   flex-wrap: wrap;
   margin-top: 30px;
-  margin-bottom: 9.3333333333vw;
+  margin-bottom: 30px;
 }
 .nav__buyList {
-  margin: 20px 10px 20px 10px;
+  margin: 16px -2px 0px 7px;
   border: solid 1px #000;
   border-radius: 5px;
   font-size: 10px;
+  padding: 15px;
 }
 .nav__snsLists {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 29.3333333333vw;
+  justify-content: space-between;
+  width: 23.3333333333vw;
   margin: auto;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
 }
 
 .fv {
@@ -468,10 +461,10 @@ body {
 }
 .fv__logo {
   position: absolute;
-  top: -20%;
+  top: -10%;
   left: 5.3333333333vw;
   width: 117.3333333333vw;
-  font-size: 50px;
+  font-size: 80px;
   -webkit-transform-origin: left bottom;
           transform-origin: left bottom;
   -webkit-transform: rotate(90deg);
@@ -524,8 +517,7 @@ body {
   }
 }
 .pickupNews__link {
-  -webkit-box-shadow: 0px 0px 22px -7px #777777;
-          box-shadow: 0px 0px 22px -7px #777777;
+  box-shadow: 0px 0px 22px -7px #777777;
   border-radius: 12px;
   overflow: hidden;
 }
@@ -590,7 +582,7 @@ body {
 
 .about {
   position: relative;
-  background: url("../../src/img/bg-about.jpg") center;
+  background: linear-gradient(177.6278158453deg, rgb(181, 209, 205) -61.748480444%, rgb(181, 209, 205) -40.4360465116%, rgb(239, 212, 206) 85.579082981%, rgb(255, 255, 255) 96.8789640592%);
   background-size: cover;
   padding: 67.7333333333vw 0 0;
 }
@@ -646,6 +638,7 @@ body {
   position: relative;
   z-index: 3;
   width: 26.4vw;
+  color: #8dc9bf;
 }
 @media only screen and (min-width: 768px) {
   .about__spec--icon {
@@ -689,6 +682,7 @@ body {
 .about__spec--catch {
   width: 45.8666666667vw;
   margin-bottom: 2rem;
+  font-size: 22px;
 }
 @media only screen and (min-width: 768px) {
   .about__spec--catch {
@@ -738,8 +732,9 @@ body {
   }
 }
 .about__ttlEn {
-  width: 45.3333333333vw;
+  font-size: 20px;
   margin-bottom: 8vw;
+  color: #8dc9bf;
 }
 @media only screen and (min-width: 768px) {
   .about__ttlEn {
@@ -808,7 +803,14 @@ body {
   }
 }
 .product__items--ttl {
-  margin-bottom: 12.5333333333vw;
+  font-size: 24px;
+  margin-bottom: 10px;
+  margin-left: 60px;
+}
+.product__items--ttl2 {
+  margin-left: 110px;
+  font-size: 40px;
+  margin-bottom: 30px;
 }
 @media only screen and (min-width: 768px) {
   .product__items--ttl {
@@ -979,8 +981,12 @@ body {
     font-size: 2.03125vw;
   }
 }
-.product__items--btn:not(:last-of-type) {
+.product__items--btn {
   margin-bottom: 4vw;
+  border: solid 1px #000;
+  border-radius: 5px;
+  padding: 18px;
+  text-align: center;
 }
 @media only screen and (min-width: 768px) {
   .product__items--btn:not(:last-of-type) {
@@ -1041,6 +1047,7 @@ body {
 }
 .topshop__ttl {
   margin-bottom: 10.6666666667vw;
+  font-size: 40px;
 }
 @media only screen and (min-width: 768px) {
   .topshop__ttl {
@@ -1057,6 +1064,13 @@ body {
 }
 .topshop__img {
   margin-bottom: 5.3333333333vw;
+}
+.topshop__btn {
+border: solid 1px #000;
+border-radius: 5px;
+padding: 18px;
+text-align: center;
+font-size: 13px;
 }
 
 .cm {
@@ -1129,6 +1143,7 @@ body {
   width: 20.9333333333vw;
   margin-bottom: 12.5333333333vw;
   font-weight: 500;
+  font-size: 40px;
 }
 @media only screen and (min-width: 768px) {
   .news__ttl {
@@ -1221,7 +1236,22 @@ body {
   width: 66.6666666667vw;
 }
 .last__insta--ttl {
-  margin-bottom: 10.6666666667vw;
+  margin-bottom: 20px;
+  margin-left: 42px;
+  font-size: 29px;
+}
+.last__insta--ttl2 {
+  font-size: 14px;
+  margin-bottom: 40px;
+  margin-left: 107px;
+}
+
+.last__insta--btn {
+border: solid 1px #000;
+border-radius: 5px;
+padding: 18px;
+text-align: center;
+font-size: 13px;
 }
 @media only screen and (min-width: 768px) {
   .last__insta--ttl {
@@ -1230,8 +1260,9 @@ body {
 }
 
 .footer__logo {
-  width: 29.3333333333vw;
+  width: 26.3333333333vw;
   margin: 0 auto 12vw;
+  font-size: 35px;
 }
 @media only screen and (min-width: 768px) {
   .footer__logo {
@@ -1241,7 +1272,7 @@ body {
 }
 .footer__snsLists {
   display: flex;
-  width: 29.3333333333vw;
+  width: 11.3333333333vw;
   margin: 0 auto 13.3333333333vw;
 }
 @media only screen and (min-width: 768px) {
@@ -1287,8 +1318,9 @@ body {
 }
 .footer__copy {
   display: flex;
-  margin-left: 30px;
+  margin-left: 115px;
   margin-bottom: 20px;
+  font-size: 17px;
 }
 
 @media only screen and (min-width: 768px) {
