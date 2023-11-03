@@ -460,6 +460,7 @@ body {
   }
 }
 .fv__logo {
+  font-family: "游ゴシック体"
   position: absolute;
   top: -10%;
   left: 5.3333333333vw;
@@ -504,6 +505,7 @@ body {
   }
 }
 .pickupNews__ttl {
+  font-family: "游ゴシック体"
   position: absolute;
   width: 3.4666666667vw;
   margin: -10px 0px 0px -12px;
@@ -522,6 +524,7 @@ body {
   box-shadow: 0px 0px 22px -7px #777777;
   border-radius: 12px;
   overflow: hidden;
+  font-family: "游ゴシック体"
 }
 
 .concept {
@@ -929,6 +932,7 @@ body {
 }
 @media only screen and (min-width: 768px) {
   .product__items--list:not(:last-of-type) {
+    font-family: "游ゴシック体"
     margin-bottom: 1.171875vw;
   }
 }
@@ -1240,13 +1244,13 @@ font-size: 13px;
 }
 .last__insta--ttl {
   margin-bottom: 20px;
-  margin-left: 68px;
+  margin-left: 82px;
   font-size: 29px;
 }
 .last__insta--ttl2 {
   font-size: 14px;
   margin-bottom: 40px;
-  margin-left: 67px;
+  margin-left: 79px;
 }
 
 .last__insta--btn {
@@ -1265,7 +1269,7 @@ font-size: 13px;
 .footer__logo {
   width: 26.3333333333vw;
   margin: 0 auto 12vw;
-  margin-left: 76px;
+  margin-left: 86px;
   font-size: 35px;
 }
 @media only screen and (min-width: 768px) {
@@ -1320,7 +1324,7 @@ font-size: 13px;
 }
 .footer__copy {
   display: flex;
-  margin-left: 78px;
+  margin-left: 86px;
   margin-bottom: 20px;
   font-size: 17px;
 }
@@ -1346,6 +1350,7 @@ font-size: 13px;
     width: 22.8rem;
   }
   .pcContainer__logo {
+    font-family: "游ゴシック体"
     font-size: 30px;
   }
   .pcContainer__logo2 {
@@ -1597,6 +1602,7 @@ font-size: 13px;
   }
 }
 .blockTtl {
+  font-family: "游ゴシック体"
   -webkit-transform-origin: left bottom;
           transform-origin: left bottom;
   -webkit-transform: rotate(90deg);
