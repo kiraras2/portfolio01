@@ -477,6 +477,7 @@ body {
     top: -7rem;
     font-size: 80px;
     margin-top: 20px;
+  }
 }
 .fv__movie {
   width: 84.2666666667vw;
@@ -1331,7 +1332,7 @@ font-size: 13px;
     bottom: 0;
     left: 0;
     right: 0;
-    background-image: url("./assets/images/annie-spratt-nWiS2rgtVts-unsplash.jpg");
+    background: linear-gradient(177.6278158453deg, rgb(181, 209, 205) -61.748480444%, rgb(181, 209, 205) -40.4360465116%, rgb(239, 212, 206) 85.579082981%, rgb(255, 255, 255) 96.8789640592%);
     background-repeat: no-repeat;
     background-size: cover;
     padding: 3rem 3.5rem;
@@ -1345,7 +1346,13 @@ font-size: 13px;
     width: 22.8rem;
   }
   .pcContainer__logo {
+    font-size: 30px;
+  }
+  .pcContainer__logo2 {
+    margin-top: 10px;
     margin-bottom: 3rem;
+    margin-left: 35px;
+    font-size: 10px;
   }
   .pcContainer__links {
     display: inline-block;
