@@ -58,8 +58,6 @@ const switchImgLeftDown = document.querySelectorAll('.pc__switchImgLeftDown');
 
 const SwitchImg = function (entries) {
   const [entry] = entries;
-  // console.log(entry);
-  // console.log(entry.target.dataset.num);
   const els = document.querySelectorAll(
     `.imageNum-${entry.target.dataset.num}`
   );
@@ -96,7 +94,6 @@ const indexContainer = document.querySelectorAll('.container');
 
 const navEffect = function (entries) {
   const [entry] = entries;
-  // console.log(entry.target.dataset.index);
   if (entry.isIntersecting) {
     activateIndex(entry.target.dataset.index);
   }
@@ -145,7 +142,7 @@ $(function () {
   smoothScroll();
 });
 
-var cursor = $('.cursor'),
+let cursor = $('.cursor'),
   follower = $('.follower'),
   cWidth = 8,
   fWidth = 40,
@@ -214,7 +211,7 @@ $(document).ready(function(){
     slidesToShow: 1
   })
   .on('afterChange', function(event, slick, currentSlide, nextSlide) {
-    var $self = $(this);
+    let $self = $(this);
     switch (currentSlide){
       case 19:
         $(this).slick("slickSetOption", "autoplaySpeed", 125);
@@ -247,10 +244,10 @@ $('.lpLoading').delay(2600).queue(function(next) {
 });
 
 window.onload = function () {
-  setTimeout('test()', 100);		
+  setTimeout('test()', 100);
 }
 function test(){
-  document.getElementById('body').style.display = 'block';	
+  document.getElementById('body').style.display = 'block';
 }
 
 $(function () {
