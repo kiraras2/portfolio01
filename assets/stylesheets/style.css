@@ -370,7 +370,9 @@ body {
 }
 .nav__lists {
   margin-bottom: 9.3333333333vw;
-  font-size: 30px;
+  font-size: 34px;
+  font-family: serif;
+  letter-spacing: 4px;
 }
 .nav__list {
   width: 100%;
@@ -449,27 +451,26 @@ body {
   width: 23.3333333333vw;
   margin: auto;
 }
+.nav__snsLists li {
+  width: 50px;
+}
 
 .fv {
   position: relative;
+  margin-top: -120px;
+  margin-bottom: 70px;
 }
 @media only screen and (min-width: 768px) {
   .fv {
     margin-bottom: 5.234375vw;
-    margin-top: -100px;
   }
 }
 .fv__logo {
-  font-family: "游ゴシック体"
-  position: absolute;
-  top: -10%;
-  left: 5.3333333333vw;
-  width: 117.3333333333vw;
-  font-size: 80px;
-  -webkit-transform-origin: left bottom;
-          transform-origin: left bottom;
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
+  font-family: serif;
+  font-size: 120px;
+  ransform-origin: left bottom;
+  transform: rotate(90deg);
+  margin-left: 12px;
 }
 @media only screen and (min-width: 768px) {
   .fv__logo {
@@ -1615,10 +1616,7 @@ font-family: serif;
   }
 }
 .blockTtl {
-  font-family: "游ゴシック体"
-          transform-origin: left bottom;
-          transform: rotate(90deg);
-  left: 5.3333333333vw;
+  transform: rotate(90deg);
   font-size: 20px;
   letter-spacing: 2px;
   font-family: serif;
