@@ -452,11 +452,11 @@ body {
 
 .fv {
   position: relative;
-  margin-bottom: 17.8666666667vw;
 }
 @media only screen and (min-width: 768px) {
   .fv {
     margin-bottom: 5.234375vw;
+    margin-top: -100px;
   }
 }
 .fv__logo {
@@ -487,6 +487,7 @@ body {
 @media only screen and (min-width: 768px) {
   .fv__movie {
     width: 32.109375vw;
+    margin-top: 100px;
   }
 }
 .fv__movie video {
@@ -505,14 +506,13 @@ body {
   }
 }
 .pickupNews__ttl {
-  font-family: "游ゴシック体"
   position: absolute;
-  width: 3.4666666667vw;
   margin: -10px 0px 0px -12px;
-  -webkit-transform-origin: left bottom;
   transform-origin: left bottom;
--webkit-transform: rotate(90deg);
   transform: rotate(90deg);
+  font-size: 20px;
+  letter-spacing: 2px;
+  font-family: serif;
 }
 @media only screen and (min-width: 768px) {
   .pickupNews__ttl {
@@ -687,7 +687,9 @@ body {
 .about__spec--catch {
   width: 45.8666666667vw;
   margin-bottom: 2rem;
-  font-size: 28px;
+  font-size: 33px;
+  font-family: serif;
+  letter-spacing: 6px;
 }
 @media only screen and (min-width: 768px) {
   .about__spec--catch {
@@ -749,7 +751,9 @@ body {
 }
 .about__ttlJp {
   margin-bottom: 16vw;
-  font-size: 40px;
+  font-size: 48px;
+  line-height: 1.4em;
+  font-family: serif;
 }
 @media only screen and (min-width: 768px) {
   .about__ttlJp {
@@ -811,10 +815,10 @@ body {
 .product__items--ttl {
   font-size: 26px;
   margin-bottom: 10px;
-  margin-left: 6px;
+  text-align: center;
 }
 .product__items--ttl2 {
-  margin-left: 65px;
+  text-align: center;
   font-size: 44px;
   margin-bottom: 30px;
 }
@@ -1077,7 +1081,9 @@ border: solid 1px #000;
 border-radius: 5px;
 padding: 18px;
 text-align: center;
-font-size: 13px;
+font-size: 20px;
+letter-spacing: 2px;
+font-weight: bold;
 }
 
 .cm {
@@ -1151,6 +1157,7 @@ font-size: 13px;
   margin-bottom: 12.5333333333vw;
   font-weight: 500;
   font-size: 40px;
+  font-family: serif;
 }
 @media only screen and (min-width: 768px) {
   .news__ttl {
@@ -1244,13 +1251,15 @@ font-size: 13px;
 }
 .last__insta--ttl {
   margin-bottom: 20px;
-  margin-left: 82px;
+  text-align: center;
   font-size: 29px;
+  font-family: serif;
 }
 .last__insta--ttl2 {
   font-size: 14px;
   margin-bottom: 40px;
-  margin-left: 79px;
+  text-align: center;
+  font-family: serif;
 }
 
 .last__insta--btn {
@@ -1258,7 +1267,8 @@ border: solid 1px #000;
 border-radius: 5px;
 padding: 18px;
 text-align: center;
-font-size: 13px;
+font-size: 23px;
+font-family: serif;
 }
 @media only screen and (min-width: 768px) {
   .last__insta--ttl {
@@ -1267,10 +1277,11 @@ font-size: 13px;
 }
 
 .footer__logo {
-  width: 26.3333333333vw;
+  font-family: serif;
   margin: 0 auto 12vw;
-  margin-left: 86px;
+  text-align: center;
   font-size: 35px;
+  font-family: serif;
 }
 @media only screen and (min-width: 768px) {
   .footer__logo {
@@ -1314,7 +1325,8 @@ font-size: 13px;
   justify-content: space-between;
   margin-bottom: 6.6666666667vw;
   font-size: 16px;
-  margin-left: 22px;
+  text-align: center;
+  font-family: serif;
 }
 @media only screen and (min-width: 768px) {
   .footer__linkLists {
@@ -1324,9 +1336,10 @@ font-size: 13px;
 }
 .footer__copy {
   display: flex;
-  margin-left: 86px;
   margin-bottom: 20px;
   font-size: 17px;
+  text-align: center;
+  font-family: serif;
 }
 
 @media only screen and (min-width: 768px) {
@@ -1356,8 +1369,8 @@ font-size: 13px;
   .pcContainer__logo2 {
     margin-top: 10px;
     margin-bottom: 3rem;
-    margin-left: 35px;
     font-size: 10px;
+    text-align: center;
   }
   .pcContainer__links {
     display: inline-block;
@@ -1603,12 +1616,12 @@ font-size: 13px;
 }
 .blockTtl {
   font-family: "游ゴシック体"
-  -webkit-transform-origin: left bottom;
           transform-origin: left bottom;
-  -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
   left: 5.3333333333vw;
-  font-size: 13px;
+  font-size: 20px;
+  letter-spacing: 2px;
+  font-family: serif;
 }
 @media only screen and (min-width: 768px) {
   .blockTtl {

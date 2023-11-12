@@ -1,43 +1,43 @@
 ;(function(factory) {
-   'use strict';
-  if (typeof define === 'function' && define.amd) {
-      define(['jquery'], factory);
-  } else if (typeof exports !== 'undefined') {
-      module.exports = factory(require('jquery'));
-  } else {
-      factory(jQuery);
-  }
+    'use strict';
+    if (typeof define === 'function' && define.amd) {
+        define(['jquery'], factory);
+    } else if (typeof exports !== 'undefined') {
+        module.exports = factory(require('jquery'));
+    } else {
+        factory(jQuery);
+    }
 
 }(function($) {
-  'use strict';
-  var Slick = window.Slick || {};
+    'use strict';
+    let Slick = window.Slick || {};
 
-  Slick = (function() {
+    Slick = (function() {
 
     let instanceUid = 0;
 
-      function Slick(element, settings) {
+        function Slick(element, settings) {
 
         let _ = this, dataSettings;
 
-          _.defaults = {
-              accessibility: true,
-              adaptiveHeight: false,
-              appendArrows: $(element),
-              appendDots: $(element),
-              arrows: true,
-              asNavFor: null,
-              prevArrow: '<button class="slick-prev" aria-label="Previous" type="button">Previous</button>',
-              nextArrow: '<button class="slick-next" aria-label="Next" type="button">Next</button>',
-              autoplay: false,
-              autoplaySpeed: 3000,
-              centerMode: false,
-              centerPadding: '50px',
-              cssEase: 'ease',
-              customPaging: function(slider, i) {
-                  return $('<button type="button" />').text(i + 1);
-              },
-              dots: false,
+        _.defaults = {
+        accessibility: true,
+        adaptiveHeight: false,
+        appendArrows: $(element),
+        appendDots: $(element),
+        arrows: true,
+        asNavFor: null,
+        prevArrow: '<button class="slick-prev" aria-label="Previous" type="button">Previous</button>',
+        nextArrow: '<button class="slick-next" aria-label="Next" type="button">Next</button>',
+        autoplay: false,
+        autoplaySpeed: 3000,
+        centerMode: false,
+        centerPadding: '50px',
+        cssEase: 'ease',
+        customPaging: function(slider, i) {
+        return $('<button type="button" />').text(i + 1);
+        },
+        dots: false,
               dotsClass: 'slick-dots',
               draggable: true,
               easing: 'linear',
