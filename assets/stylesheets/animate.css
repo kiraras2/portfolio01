@@ -933,7 +933,9 @@
 .fadeIn {
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
-  font-size: 35px;
+  font-size: 45px;
+  font-family: serif;
+  letter-spacing: 12px;
 }
 
 @-webkit-keyframes fadeInDown {

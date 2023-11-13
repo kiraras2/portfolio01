@@ -370,9 +370,9 @@ body {
 }
 .nav__lists {
   margin-bottom: 9.3333333333vw;
-  font-size: 34px;
+  font-size: 26px;
   font-family: serif;
-  letter-spacing: 4px;
+  letter-spacing: 3px;
 }
 .nav__list {
   width: 100%;
@@ -444,6 +444,7 @@ body {
   border-radius: 5px;
   font-size: 10px;
   padding: 15px;
+  font-weight: bold;
 }
 .nav__snsLists {
   display: flex;
@@ -455,9 +456,12 @@ body {
   width: 50px;
 }
 
+.svg {
+  width: 50px;
+}
 .fv {
   position: relative;
-  margin-top: -120px;
+  margin-top: -260px;
   margin-bottom: 70px;
 }
 @media only screen and (min-width: 768px) {
@@ -470,7 +474,9 @@ body {
   font-size: 120px;
   ransform-origin: left bottom;
   transform: rotate(90deg);
-  margin-left: 12px;
+  margin-top: 140px;
+  margin-right: 260px;
+}
 }
 @media only screen and (min-width: 768px) {
   .fv__logo {
@@ -602,6 +608,10 @@ body {
   top: -24.5333333333vw;
   left: 0;
   width: 91.7333333333vw;
+img {
+  width: 688px;
+  height: 522px;
+  }
 }
 @media only screen and (min-width: 768px) {
   .about__mv {
@@ -641,9 +651,13 @@ body {
   }
 }
 .about__spec--icon {
-  position: relative;
-  z-index: 3;
-  width: 26.4vw;
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  text-align:center;
+  line-height: 80px;
+  border-radius: 50%;
+  border: solid 3px #8dc9bf;
   color: #8dc9bf;
 }
 @media only screen and (min-width: 768px) {
@@ -1174,19 +1188,17 @@ font-weight: bold;
 .news__list {
   font-size: 3.7333333333vw;
   letter-spacing: 0.05em;
-  line-height: 1.4;
-  text-align: left;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  align-items: baseline;
   padding: 8.8vw 0;
 }
+.news__list2 {
+  font-size: 3.7333333333vw;
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: baseline;
+  padding: 8.8vw 0;
+}
+
 @media only screen and (min-width: 768px) {
   .news__list {
     padding: 3.515625vw 0;
@@ -1210,6 +1222,7 @@ font-weight: bold;
 }
 .news__txt {
   line-height: 1.5;
+  margin-top: 20px;
 }
 
 .last {
@@ -1326,7 +1339,6 @@ font-family: serif;
   justify-content: space-between;
   margin-bottom: 6.6666666667vw;
   font-size: 16px;
-  text-align: center;
   font-family: serif;
 }
 @media only screen and (min-width: 768px) {
@@ -1336,7 +1348,6 @@ font-family: serif;
   }
 }
 .footer__copy {
-  display: flex;
   margin-bottom: 20px;
   font-size: 17px;
   text-align: center;
