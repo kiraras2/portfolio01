@@ -608,9 +608,10 @@ body {
   top: -24.5333333333vw;
   left: 0;
   width: 91.7333333333vw;
-img {
-  width: 688px;
-  height: 522px;
+  & img {
+    width: 414px;
+    height: 314px;
+    object-fit: cover;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -619,6 +620,7 @@ img {
     width: 35.15625vw;
   }
 }
+
 .about__ttl {
   position: relative;
   top: -1rem;
@@ -754,9 +756,10 @@ img {
   }
 }
 .about__ttlEn {
-  font-size: 20px;
+  font-size: 18px;
   margin-bottom: 8vw;
   color: #8dc9bf;
+  letter-spacing: 3px;
 }
 @media only screen and (min-width: 768px) {
   .about__ttlEn {
@@ -828,14 +831,16 @@ img {
   }
 }
 .product__items--ttl {
-  font-size: 26px;
+  font-size: 36px;
   margin-bottom: 10px;
   text-align: center;
+  font-family: serif;
 }
 .product__items--ttl2 {
   text-align: center;
-  font-size: 44px;
+  font-size: 60px;
   margin-bottom: 30px;
+  font-family: serif;
 }
 @media only screen and (min-width: 768px) {
   .product__items--ttl {
@@ -845,6 +850,11 @@ img {
 .product__items--pic {
   width: 34.6666666667vw;
   margin: 0 auto 9.6vw;
+  & img {
+    width: 152px;
+    height: 334px;
+    object-fit: cover;
+  }
 }
 @media only screen and (min-width: 768px) {
   .product__items--pic {
@@ -1013,6 +1023,9 @@ img {
   border-radius: 5px;
   padding: 18px;
   text-align: center;
+  letter-spacing: 2px;
+  font-weight: bold;
+  font-size: 17px;
 }
 @media only screen and (min-width: 768px) {
   .product__items--btn:not(:last-of-type) {
@@ -1094,9 +1107,9 @@ img {
 .topshop__btn {
 border: solid 1px #000;
 border-radius: 5px;
-padding: 18px;
+padding: 21px;
 text-align: center;
-font-size: 20px;
+font-size: 18px;
 letter-spacing: 2px;
 font-weight: bold;
 }
@@ -1725,8 +1738,9 @@ font-family: serif;
   }
 }
 .about__movie img {
-  width:100%;
-  height:auto;
+  width: 423px;
+  height: 402px;
+  object-fit: cover;
 
 }
 .fv__scroll {
