@@ -459,7 +459,6 @@ body {
 
 .fv {
   position: relative;
-  margin-top: -260px;
   margin-bottom: 70px;
 }
 @media only screen and (min-width: 768px) {
@@ -470,19 +469,14 @@ body {
 .fv__logo {
   font-family: serif;
   font-size: 120px;
-  ransform-origin: left bottom;
   transform: rotate(90deg);
-  margin-top: 140px;
-  margin-right: 260px;
-}
+  position: absolute;
+  bottom: 58%;
+  margin-left: -122px;
 }
 @media only screen and (min-width: 768px) {
   .fv__logo {
-    left: 2.34375vw;
-    width: 42.96875vw;
-    top: -7rem;
-    font-size: 80px;
-    margin-top: 20px;
+    font-size: 115px;
   }
 }
 .fv__movie {
@@ -492,7 +486,6 @@ body {
 @media only screen and (min-width: 768px) {
   .fv__movie {
     width: 32.109375vw;
-    margin-top: 100px;
   }
 }
 .fv__movie video {
@@ -519,6 +512,19 @@ body {
   letter-spacing: 2px;
   font-family: serif;
 }
+.pickupNews__txt {
+  font-size: 18px;
+  margin-top: 11px;
+  padding: 6px;
+  margin-left: 11px;
+  margin-right: 18px;
+  line-height: 19px;
+}
+.pickupNews__txt p {
+  font-family: serif;
+  font-size: 15px;
+  margin-top: 48px;
+}
 @media only screen and (min-width: 768px) {
   .pickupNews__ttl {
     width: 1.171875vw;
@@ -529,13 +535,13 @@ body {
   box-shadow: 0px 0px 22px -7px #777777;
   border-radius: 12px;
   overflow: hidden;
-  font-family: "游ゴシック体"
+  font-family: "游ゴシック体";
   display: flex;
-  & img {
+}
+.pickupNews__link img {
     width: 143px;
     height: 143px;
   }
-}
 
 .concept {
   position: relative;
@@ -611,21 +617,21 @@ body {
   top: -24.5333333333vw;
   left: 0;
   width: 91.7333333333vw;
-  & img {
+}
+.about__mv {
     width: 414px;
     height: 314px;
     object-fit: cover;
   }
+  .about__mv img {
+    width: 414px;
+    height: 314px;
+    object-fit: cover;
 }
 @media only screen and (min-width: 768px) {
   .about__mv {
     top: -7.8125vw;
     width: 35.15625vw;
-    & img {
-      width: 414px;
-      height: 314px;
-      object-fit: cover;
-    }
   }
 }
 
@@ -665,11 +671,16 @@ body {
   width: 100px;
   height: 100px;
   text-align:center;
-  line-height: 80px;
   border-radius: 50%;
-  border: solid 3px #8dc9bf;
+  border: solid 1px #8dc9bf;
   color: #8dc9bf;
+  font-size: 26px;
 }
+.about__spec--icon p {
+  line-height: 100px;
+  letter-spacing: 2px;
+}
+
 @media only screen and (min-width: 768px) {
   .about__spec--icon {
     width: 10.15625vw;
@@ -858,11 +869,11 @@ body {
 .product__items--pic {
   width: 34.6666666667vw;
   margin: 0 auto 9.6vw;
-  & img {
+}
+.product__items--pic img {
     width: 152px;
     height: 334px;
     object-fit: cover;
-  }
 }
 @media only screen and (min-width: 768px) {
   .product__items--pic {
@@ -1665,6 +1676,7 @@ font-family: serif;
   font-size: 20px;
   letter-spacing: 2px;
   font-family: serif;
+  margin-top: 50px;
 }
 @media only screen and (min-width: 768px) {
   .blockTtl {
