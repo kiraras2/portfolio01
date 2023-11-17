@@ -104,8 +104,7 @@ function activateIndex(element) {
     currentActiveIndex.classList.remove('active');
   }
   const newActiveIndex = document.querySelector(`a[href='#${element}']`);
-  console.log(newActiveIndex);
-  newActiveIndex.classList.add('active');
+
 }
 const targetContainer = new IntersectionObserver(navEffect, {
   root: null,
