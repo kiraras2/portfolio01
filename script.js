@@ -117,18 +117,32 @@ init();
 $(function(){
   let num1 = 0;
   let num2 = 0;
-  let p1 = $("p:nth-child(1)");
-  let p2 = $("p:nth-child(2)");
+  let num3 = 0;
+  let num4 = 0;
+  let p1 = $("#p1");
+  let p2 = $("#p2");
+  let p3 = $("#p3");
+  let p4 = $("#p4");
   setInterval(function(){
     p1.css("transform","translateX(" + -num1 + "%)");
     p2.css("transform","translateX(" + -num2 + "%)");
+    p3.css("transform","translateX(" + -num3 + "%)");
+    p4.css("transform","translateX(" + -num4 + "%)");
     num1++;
     num2++;
-    if(num1 >= 200){
+    num3++;
+    num4++;
+    if(num1 >= 400){
       num1 = 0;
     }
-    if(num2 >= 300){
+    if(num2 >= 1200){
       num2 = 100;
+    }
+    if(num3 >= 1600){
+      num3 = 200;
+    }
+    if(num4 >= 2200){
+      num4 = 300;
     }
   },100);
 });
