@@ -38,12 +38,12 @@ const blockFadeIns = function () {
   fadeIns.forEach((el) => targetObs.observe(el));
 };
 
-// const fvEl = document.querySelector('.p-fv');
-// const conceptEl = document.querySelector('.p-concept');
+const fvEl = document.querySelector('.fv');
+const conceptEl = document.querySelector('.concept');
 const gelEl = document.querySelector('.gel');
 const oilEl = document.querySelector('.oil');
 const milkEl = document.querySelector('.milk');
-// const aboutEl = document.querySelector('.about__ttlBox');
+const aboutEl = document.querySelector('.about__ttlBox');
 const clearEl = document.querySelector('.clear');
 const whiteEl = document.querySelector('.white');
 const shopEl = document.querySelector('.shop');
@@ -76,18 +76,11 @@ const targetObs = new IntersectionObserver(SwitchImg, {
   root: null,
   threshold: 0.1,
 });
-// targetObs.observe(fvEl);
-// targetObs.observe(conceptEl);
 targetObs.observe(gelEl);
 targetObs.observe(oilEl);
 targetObs.observe(milkEl);
-// targetObs.observe(aboutEl);
 targetObs.observe(clearEl);
-// targetObs.observe(shopEl);
 targetObs.observe(whiteEl);
-// targetObs.observe(newsEl);
-// targetObs.observe(lastEl);
-// targetObs.observe(footerEl);
 
 const indexContainer = document.querySelectorAll('.container');
 
