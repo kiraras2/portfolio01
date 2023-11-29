@@ -1,3 +1,56 @@
+// 小さいカーソル
+function cursor() {
+  const mouseCursor = "#mouseCursor";
+  const cursorTarget = ".l-lpWrapper";
+  const mouseCursorArea = window;
+  const cursorSize = parseInt($(mouseCursor).css("width").replace(/px/, ""));
+  const cursorX = parseInt($(mouseCursor).css("left").replace(/px/, ""));
+  const cursorPosition = cursorX + (cursorSize / 2);
+  let scale = 1;
+  $(mouseCursorArea).hover(function(){
+      $(mouseCursorArea).mousemove(function(e){
+          let x = e.clientX - cursorPosition;
+          let y = e.clientY - cursorPosition;
+          $(mouseCursor).css({
+          "transform": "translate(" + x + "px," + y + "px) scale(" + scale + ")",
+          });
+      });
+  });
+}
+
+// 大きいマウスストーカー
+function stalk(){
+  const mouseStalker = "#mouseStalker";
+  const stalkerTarget = ".l-lpWrapper";
+  const stalkerArea = window;
+  const stalkerSize = parseInt($(mouseStalker).css("width").replace(/px/, ""));
+  const stalkerX = parseInt($(mouseStalker).css("left").replace(/px/, ""));
+  const stalkerPosition = stalkerX + (stalkerSize / 2);
+  let scale = 1;
+  $(stalkerArea).hover(function(){
+      $(stalkerArea).mousemove(function(e){
+          let x = e.clientX - stalkerPosition;
+          let y = e.clientY - stalkerPosition;
+          $(mouseStalker).css({
+          "transform": "translate(" + x + "px," + y + "px) scale(" + scale + ")",
+          });
+      });
+  });
+  $(stalkerTarget).hover(function(e){
+  scale = 2;
+  let x = e.clientX - stalkerPosition;
+  let y = e.clientY - stalkerPosition;
+  $(mouseStalker).css({
+      "transform": "translate(" + x + "px," + y + "px) scale(" + scale + ")",
+  });
+  }, function(){
+      scale = 1;
+  });
+}
+
+cursor()
+stalk()
+
 const navFunc = function () {
   const navBtn = document.querySelector('.p-nav__btn');
   const navContent = document.querySelector('.p-nav__wrapper');
