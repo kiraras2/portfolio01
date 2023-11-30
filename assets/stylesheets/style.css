@@ -131,7 +131,7 @@ video {
 
 a {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  cursor: pointer;
+  cursor: none;
 }
 
 *:focus {
@@ -403,13 +403,15 @@ body {
   font-size: 160px;
   transform: rotate(90deg);
   position: absolute;
+  top: 206px;
   bottom: 40%;
   margin-left: -174px;
 }
 @media only screen and (min-width: 768px) {
   .p-fv__logo {
     font-size: 180px;
-    bottom: 50%;
+    bottom: 52%;
+    top: 233px;
     margin-left: -191px;
   }
 }
@@ -1362,7 +1364,7 @@ font-family: serif;
     transition: 0.2s;
     transition-timing-function: ease-out;
     pointer-events: none;
-    z-index: 10;
+    z-index: 1000;
   }
 /* .cursor,
 .follower {
