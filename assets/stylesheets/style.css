@@ -8,7 +8,6 @@ html {
 }
 
 body {
-  /* cursor: none; */
   width: 100%;
   position: relative;
   font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
@@ -670,11 +669,6 @@ body {
   letter-spacing: 3px;
   line-height: inherit;
 }
-/* @media only screen and (min-width: 768px) {
-  .p-about__spec--catch {
-    font-size: 35px;
-  }
-} */
 @media only screen and (min-width: 768px) {
   .p-about__spec--catch {
     width: 17.96875vw;
@@ -1337,7 +1331,6 @@ font-family: serif;
   opacity: 1;
 }
 
-/* // 小さいカーソル */
   #mouseCursor{
     position: fixed;
     top: -5px;
@@ -1351,7 +1344,7 @@ font-family: serif;
     transform: translate(0, 0);
     pointer-events: none;
   }
-    /* // 大きいマウスストーカー */
+
   #mouseStalker{
     position: fixed;
     top: 0px;
@@ -1366,78 +1359,6 @@ font-family: serif;
     pointer-events: none;
     z-index: 1000;
   }
-/* .cursor,
-.follower {
-  border-radius: 50%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  pointer-events: none;
-}
-
-.cursor {
-  width: 8px;
-  height: 8px;
-  background-color: #000;
-  z-index: 9999;
-}
-.cursor.onlyShowForPc-cursor {
-  display: none;
-}
-@media only screen and (min-width: 768px) {
-  .cursor.onlyShowForPc-cursor {
-    display: block;
-  }
-} */
-
-/* .follower {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 40px;
-  height: 40px;
-  opacity: 0.4;
-  background: linear-gradient(45deg, #f4ae9c, #8dc9bf, #f4ae9c);
-  -webkit-animation: bggradient 8s ease infinite;
-          animation: bggradient 8s ease infinite;
-  background-blend-mode: screen;
-  background-size: 200% 100%;
-  z-index: 9998;
-  -webkit-transition: -webkit-transform ease 0.1s;
-  transition: -webkit-transform ease 0.1s;
-  transition: transform ease 0.1s;
-  transition: transform ease 0.1s, -webkit-transform ease 0.1s;
-  text-align: center;
-}
-.follower.onlyShowForPc-follower {
-  display: none !important;
-}
-@media only screen and (min-width: 768px) {
-  .follower.onlyShowForPc-follower {
-    display: block !important;
-  }
-}
-.follower span {
-  display: inline-block;
-  font-size: 14px;
-  font-weight: bold;
-  -webkit-transform: scale(0);
-          transform: scale(0);
-}
-.follower.is-active {
-  -webkit-transform: scale(3);
-          transform: scale(3);
-}
-.follower.is-navy-active {
-  -webkit-transform: scale(3);
-          transform: scale(3);
-} */
 
 @-webkit-keyframes bggradient {
   0% {
