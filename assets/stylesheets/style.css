@@ -1330,7 +1330,7 @@ font-family: serif;
   z-index: 1;
   opacity: 1;
 }
-
+@media only screen and (min-width: 768px) {
   #mouseCursor{
     position: fixed;
     top: -5px;
@@ -1344,7 +1344,6 @@ font-family: serif;
     transform: translate(0, 0);
     pointer-events: none;
   }
-
   #mouseStalker{
     position: fixed;
     top: 0px;
@@ -1359,6 +1358,7 @@ font-family: serif;
     pointer-events: none;
     z-index: 1000;
   }
+}
 
 @-webkit-keyframes bggradient {
   0% {
